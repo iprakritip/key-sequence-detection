@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Key Detection</title>
-  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
 
@@ -20,10 +19,11 @@
       pressed.push(e.key);
       pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
       if (pressed.join('').includes(secretCode)) {
-        console.log("Ding Ding! You are now a cat");
+        // console.log("Ding Ding! You are now a cat");
         const message = document.createElement("h1");
         message.innerHTML = "Ding Ding! You are now a cat."
         root.appendChild(message);
+        
       }
     })
   </script>
